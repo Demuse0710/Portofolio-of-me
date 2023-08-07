@@ -3,27 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <title>Document</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
     <header>
-        
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <div class="logo">Demus</div>
+            <ul class="menu">
+                <li><a href="#banner">Home</a></li>
                 <li><a href="#pack">Our Package</a></li>
-                <li><a href="#contact">Call Us</a></li>
+                <li><a href="#call-to-action">Call Us</a></li>
             </ul>
+            <div class="menu-icon">&#9776</div>
         </nav>
     </header>
 
-    <main>
+    <!-- Banner -->
+    <div class="banner">
+        <div class="slider">
+            <img src="assets/Background.jpg" alt="Image 1">
+            <img src="assets/doge.jpg" alt="Doge Coin">
+            <img src="assets/ImageBg3.webp" alt="Artificial Intelegent Image">
+        </div>
+    </div>
 
-    </main>
+   <!-- Our Package Section -->
+   <section class="pack">
+    <!-- Your package content goes here -->
+    <h2>Our Packages</h2>
+    <div class="package">
+      <img src="assets/#.jpg" alt="Package 1">
+      <h3>Package 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="package">
+      <img src="images/package2.jpg" alt="Package 2">
+      <h3>Package 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    </section>
 
+    <!-- Call to Action Section -->
+    <section class="call-to-action">
+    <!-- Your call to action content goes here -->
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="message" placeholder="Your message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    </section>
+
+    <footer>
+        <p>&copy; @2023 Demus Company</p>
+    </footer>
+ <script src="JavaScript/script.js"></script>
 </body>
 
 </html>

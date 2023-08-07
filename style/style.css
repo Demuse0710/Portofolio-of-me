@@ -7,32 +7,213 @@ body {
 }
 
 header {
-  background-color: #001c30;
+  background-color: #445069;
   color: #fff;
+  padding: 5px;
+}
+
+nav {
+  background-color: #252B48;
+  display: flex;
+  justify-content: space-between;
+  font-color: #5B9A8B;
+  font-size: 16px;
+  align-item: center;
+  padding: 5px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li{
   padding: 10px;
 }
 
-header nav ul {
-  list-style: none;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-heading nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-header nav ul li:last-child {
-  margin-right: 0;
-}
-
-header nav ul li a {
-  color: #dafffb;
+.menu li a{
+  color: #fff;
   text-decoration: none;
 }
 
-main {
-  padding: 20%;
+.menu-icon {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Reset styles and general styles here */
+
+/* Banner styles */
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider img { 
+  transition: transform 1s ease;
+}
+
+/* Our Package Section styles */
+.our-package {
+  /* Your package styles go here */
+  padding: 40px 0;
+}
+
+.package {
+  /* Your package item styles go here */
+  text-align: center;
+}
+
+/* Call to Action Section styles */
+.call-to-action {
+  /* Your call to action styles go here */
+  background-color: #f0f0f0;
+  padding: 40px 0;
+}
+
+/* Contact Form styles */
+form {
+  /* Your form styles go here */
+  display: grid;
+  gap: 10px;
+}
+
+button {
+  /* Your button styles go here */
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    padding: 5px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .show-menu {
+    display: block;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Additional Laptop styles */
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    padding: 5px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .show-menu {
+    display: block;
+  }
+
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+}
+
+@media  (max-width: 1440px){
+   /* Additional Laptop-L styles */
+   /* Banner styles */
+  .banner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider {
+    width: 100%;
+    display: flex;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease;
+  }
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
