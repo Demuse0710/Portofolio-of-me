@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #001c30;
+  color: #fff;
+  padding: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+heading nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+
+header nav ul li a {
+  color: #dafffb;
+  text-decoration: none;
+}
+
+main {
+  padding: 20%;
+}
