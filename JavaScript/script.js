@@ -1,10 +1,11 @@
+// Menu
 const menuIcon = document.querySelector(".menu-icon");
 const menuList = document.querySelector(".menu");
 
 menuIcon.addEventListener("click", () => {
     menuList.classList.toggle("show-menu");
 });
-// scripts.js
+// Slider
 const slider = document.querySelector('.slider');
 let imageIndex = 0;
 
@@ -16,6 +17,7 @@ function slideImages() {
 
 setInterval(slideImages, 5000); // Change slide every 5 seconds
 
+// Form
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', function(event) {

@@ -1,15 +1,10 @@
+/* Reset styles and general styles here */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
-}
-
-header {
-  background-color: #445069;
-  color: #fff;
-  padding: 5px;
 }
 
 nav {
@@ -23,8 +18,8 @@ nav {
 }
 
 .logo {
-  color: #fff;
-  font-size: 24px;
+  color: #B9FFF8;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -40,18 +35,16 @@ nav {
 }
 
 .menu li a{
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .menu-icon {
   display: none;
-  color: #fff;
+  color: #333;
   font-size: 24px;
   cursor: pointer;
 }
-
-/* Reset styles and general styles here */
 
 /* Banner styles */
 .banner {
@@ -161,55 +154,6 @@ button {
     cursor: pointer;
     }
 }
-
-@media only screen and (max-width: 1024px) {
-  /* Additional Laptop styles */
-  .menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu li {
-    padding: 5px 0;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .show-menu {
-    display: block;
-  }
-
-
-.button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  }
-}
-
-@media  (max-width: 1440px){
-   /* Additional Laptop-L styles */
-   /* Banner styles */
-  .banner {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .slider {
-    width: 100%;
-    display: flex;
-  }
-
-  .slider img {
-    width: 100%;
-    height: auto;
-    transition: transform 1s ease;
-  }
-}
-
 
 footer {
   background-color: #333;
