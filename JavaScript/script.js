@@ -6,16 +6,27 @@ menuIcon.addEventListener("click", () => {
     menuList.classList.toggle("show-menu");
 });
 // Slider
-const slider = document.querySelector('.slider');
-let imageIndex = 0;
+var img = document.getElementById('img');
 
-function slideImages() {
-    imageIndex = (imageIndex + 1) % slider.children.length;
-    const translateXValue = `translateX(-${imageIndex * 100}%)`;
-    slider.style.transform = translateXValue;
+var slides = ['assets/doge.jpg', 'assets/ImageBg3.jpg', 'assets/Background.png'];
+
+var Start=0;
+
+/* Slider Function */ 
+function slider(){
+    if(Start<slides.length){
+        Start=Start+1;
+    }
+    else{
+        Start=1;
+    }
+    console.log(img);
+    img.innerHTML = "<img src="+slides[Start-1]+">";
+   
 }
+setInterval(slider,5000) /* Set time 5.0 sec for slide*/
 
-setInterval(slideImages, 5000); // Change slide every 5 seconds
+
 
 // Form
 const contactForm = document.getElementById('contactForm');
