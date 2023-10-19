@@ -41,27 +41,53 @@ nav {
 
 .menu-icon {
   display: none;
-  color: #333;
+  color: #fff;
   font-size: 24px;
   cursor: pointer;
 }
 
-/* Banner styles */
-.banner {
-  position: relative;
-  overflow: hidden;
+/* Slider styles */
+.slides {
+  width: 50%;
+  height:450px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin: 20px auto;
 }
 
-.slider {
-  display: flex;
+/* Slider Animation */
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(100%);
+ }
+  100% {
+    transform: translateX(-100%);
+ }
 }
 
-.slider img { 
-  transition: transform 1s ease;
+.slider img {
+  animation: slideAnimation 10s linear infinite;
+ }
+
+.img {
+  width: 100%;
+  height: 500px auto;
+  object-fit: fill;
+}
+
+
+img{
+  width: 100%;
+  weight: 100%;
+}
+
+/* Our Home Section styles*/
+.home {
+  padding: 40px 0;
+  text-align: center;
 }
 
 /* Our Package Section styles */
-.our-package {
+.package {
   /* Your package styles go here */
   padding: 40px 0;
 }
