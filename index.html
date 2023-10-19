@@ -12,9 +12,9 @@
         <nav>
             <div class="logo">Demus</div>
             <ul class="menu">
-                <li><a href="#slider">Home</a></li>
-                <li><a href="#package">Our Package</a></li>
-                <li><a href="#call-to-action">Call Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#porto">Portofolio</a></li>
+                <li><a href="#contact">Call Us</a></li>
             </ul>
             <div class="menu-icon">&#9776</div>
         </nav>
@@ -24,17 +24,25 @@
         <div class="slider">
                 <div>
                     <div id="img">
-                    <img sizes="(max-width: 767px) 100vw, (max-width: 910px) min(100%, 870px), (max-height: 756px) min(100%, 870px), (min-aspect-ratio: 4496/3000) calc((calc(100vh - 175px)) * 1.49867), calc(100vw - 40px)"  src="assets/Background.png" alt="slider1">
+                    <img src="assets/Background.png" alt="slider1">
                     </div>
                 </div> 
         </div>
     </container>
 
    <!-- Our Package Section -->
-   <section class="package">
+   <section class="home " id="home">
     <!-- Your package content goes here -->
     <h2>About Me</h2>
-    <div class="package">
+    <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatibus.</strong>
+        <br>
+        <a>
+            I am a student of Informatics Engineering at Bina Insan University. I have been studying programming for about two years now and i'm still
+        </a>
+    </section>
+
+    <section class="package" id="porto">
+    <div>
       <img src="assets/#.jpg" alt="Package 1">
       <h3>Package 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -47,11 +55,11 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="call-to-action">
+    <section class="call-to-action" id="contact">
     <!-- Your call to action content goes here -->
     <h2>Contact Us</h2>
     <form id="contactForm">
-        <input type="text" id="name" placeholder="Name">
+        <input type="area-text" id="name" placeholder="Name">
         <input type="email" id="email" placeholder="Email">
         <textarea id="message" placeholder="Your message"></textarea>
         <button type="submit">Submit</button>

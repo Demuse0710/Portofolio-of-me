@@ -24,9 +24,20 @@ function slider(){
     img.innerHTML = "<img src="+slides[Start-1]+">";
    
 }
-setInterval(slider,5000) /* Set time 5.0 sec for slide*/
+setInterval(slider,10000) /* Set time 10.0 sec for slide*/
 
+// /* Slider Animation */
+// const slides = document.querySelectorAll('.slider img');
 
+// slides.forEach((slides, index) => {
+//  slides.style.animation = `slideAnimation 5s linear infinite ${index}s`;
+// });
+
+// const slides = document.querySelectorAll('.slider img');
+
+// slides.forEach((slides, index) => {
+//  slides.style.animation = `slideAnimation 5s linear infinite ${index}s`;
+// });
 
 // Form
 const contactForm = document.getElementById('contactForm');
